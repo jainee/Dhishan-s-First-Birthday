@@ -13,19 +13,6 @@ A vintage stationery-inspired, mobile-friendly birthday invitation website with:
 
 Open `config.js` and replace the empty values with your party details. Example:
 
-```js
-window.PARTY_CONFIG = {
-  childName: "Dhishan",
-  partyDate: "2026-11-22T11:00:00+10:30",
-  dateLabel: "Sunday, 22 November 2026",
-  timeLabel: "11:00 am – 2:00 pm",
-  venueName: "Community Hall",
-  venueAddress: "123 Example Street, Adelaide SA",
-  mapsUrl: "https://maps.google.com/?q=123+Example+Street+Adelaide",
-  googleFormUrl: "https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform"
-};
-```
-
 The example date/time/venue above are examples only. Replace them with the actual party details. Adelaide is normally on UTC+10:30 in November; the example date is not a confirmed event date.
 
 ## 2. Photos and privacy
