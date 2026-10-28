@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff7f0">
+  <meta name="description" content="You're invited to celebrate Dhishan's first birthday!">
+  <title>Dhishan Turns One!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="sky-decor" aria-hidden="true">
+    <span class="cloud cloud-one"></span><span class="cloud cloud-two"></span>
+    <span class="star star-one">✦</span><span class="star star-two">✧</span>
+    <span class="star star-three">✦</span><span class="sparkle sparkle-one">✧</span>
+    <span class="sparkle sparkle-two">✦</span>
+  </div>
+
+  <main>
+    <section class="envelope-screen" id="welcome" aria-label="Open invitation">
+      <p class="eyebrow">A colourful celebration, a whole lot of love</p>
+      <h1>You're invited!</h1>
+      <p class="intro">A very special little boy is turning ONE…</p>
+      <button class="envelope-button" id="openInvite" aria-label="Open Dhishan's birthday invitation">
+        <span class="envelope-flap"></span>
+        <span class="envelope-letter">
+          <span class="letter-rainbow" aria-hidden="true">🌈</span>
+          <strong>Dhishan</strong>
+          <span>is turning</span>
+          <b class="one">ONE!</b>
+        </span>
+        <span class="envelope-front"><span>Tap to open</span><span class="heart">♥</span></span>
+      </button>
+      <p class="tiny-note">A little tap to open a big day 💛</p>
+      <button class="skip-link" id="skipOpen">Skip animation</button>
+    </section>
+
+    <section class="invitation hidden" id="invitation" aria-labelledby="mainTitle">
+      <div class="top-rainbow" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+      <div class="confetti-row" aria-hidden="true">🎈　✦　🎉　✧　🎊　✦　🎈</div>
+      <div class="bunting" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+      <p class="eyebrow">One whole year of smiles, cuddles &amp; magic</p>
+      <h2 id="mainTitle">Our little boy<br><span>is turning ONE!</span></h2>
+      <div class="hero-art" aria-label="Rainbow and birthday decorations">
+        <div class="rainbow-illustration"><span></span><span></span><span></span><span></span><span></span></div>
+        <div class="cloud cloud-left"></div><div class="cloud cloud-right"></div>
+        <div class="balloon balloon-pink"></div><div class="balloon balloon-blue"></div><div class="balloon balloon-yellow"></div><div class="balloon balloon-green"></div><div class="balloon balloon-lilac"></div>
+        <span class="party-hat hat-left" aria-hidden="true">🎉</span><span class="party-hat hat-left" aria-hidden="true">🥳</span>
+        <div class="birthday-number">1</div>
+        <div class="cake-illustration" aria-hidden="true"><span class="cake-top">🎂</span></div>
+        <div class="name-ribbon">DHISHAN</div>
+      </div>
+      <p class="invitation-copy">One tiny human, one big milestone, and a whole lot of love to celebrate. Please join us for a colourful day filled with giggles, treats and happy memories!</p>
+
+      <div class="details-card">
+        <div class="detail-item"><span class="detail-icon">📅</span><div><small>DATE</small><strong id="partyDate"></strong></div></div>
+        <div class="detail-item"><span class="detail-icon">⏰</span><div><small>TIME</small><strong id="partyTime"></strong></div></div>
+        <div class="detail-item"><span class="detail-icon">📍</span><div><small>WHERE</small><strong id="partyVenue"></strong><p id="partyAddress"></p><a id="mapsLink" class="text-link hidden" href="#" target="_blank" rel="noopener">Open in Google Maps ↗</a></div></div>
+      </div>
+
+      <div class="countdown-card">
+        <p class="eyebrow">The fun begins in…</p>
+        <div id="countdown" class="countdown" aria-live="polite">
+          <div><strong>—</strong><span>days</span></div><div><strong>—</strong><span>hours</span></div><div><strong>—</strong><span>mins</span></div><div><strong>—</strong><span>secs</span></div>
+        </div>
+        <p id="countdownMessage" class="small-muted">Add the party date in config.js to start the countdown.</p>
+      </div>
+
+      <section class="rsvp-section" aria-labelledby="rsvpTitle">
+        <div class="mini-stars" aria-hidden="true">✦ ✧ ✦</div>
+        <h3 id="rsvpTitle">Can you make it?</h3>
+        <p>We'd love to celebrate this special milestone with you!</p>
+        <a id="rsvpButton" class="rsvp-button" href="#" target="_blank" rel="noopener">Please RSVP <span>♥</span></a>
+        <p id="rsvpNote" class="small-muted">Add your Google Form link in config.js to enable RSVP.</p>
+      </section>
+
+      <footer>
+        <div class="footer-rainbow" aria-hidden="true">🎈 🎀 🎉 🎊 🎈</div>
+        <p>With love,</p><strong>Dhishan &amp; family</strong>
+        <p class="footer-small">Thank you for being part of our little one's big adventure.</p>
+      </footer>
+    </section>
+  </main>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
